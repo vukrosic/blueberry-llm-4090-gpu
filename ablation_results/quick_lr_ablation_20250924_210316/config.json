@@ -1,0 +1,49 @@
+{
+  "experiment_name": "quick_lr_ablation",
+  "base_config": {
+    "d_model": 384,
+    "n_heads": 8,
+    "n_layers": 6,
+    "d_ff": 1536,
+    "batch_size": 16,
+    "max_steps": 20,
+    "gradient_accumulation_steps": 4,
+    "muon_lr": 0.01,
+    "max_seq_len": 512,
+    "num_documents": 2000,
+    "max_tokens": 500000,
+    "eval_every": 5,
+    "eval_steps": 100,
+    "weight_decay": 0.1,
+    "dropout": 0.1,
+    "grad_clip": 1.0,
+    "use_amp": true,
+    "vocab_size": null,
+    "log_milestones": [
+      2000,
+      5000,
+      10000
+    ],
+    "num_experts": 8,
+    "expert_top_k": 2,
+    "load_balancing_weight": 0.01,
+    "d_k": 48
+  },
+  "lr_config": {
+    "muon_lr_values": [
+      0.01,
+      0.1
+    ],
+    "adamw_lr_ratio_values": [
+      0.1,
+      0.5
+    ],
+    "momentum_values": [
+      0.95
+    ],
+    "weight_decay_values": [
+      0.1
+    ]
+  },
+  "total_experiments": 4
+}
