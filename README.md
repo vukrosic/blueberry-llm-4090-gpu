@@ -19,6 +19,15 @@ Any company or person (even with no technical experience) should be able to down
 *Community experiments and findings will be documented here*
 
 ### Sep 25 2025
+- **📈 Learning Rate Schedule Optimization**: Fine-tuned warmup strategy for additional performance gains
+  - **1.6% additional validation loss improvement** (6.8625 → 6.7518)
+  - **16.4% accuracy improvement** (12.99% → 15.12%)
+  - **10.5% perplexity reduction** (955.71 → 855.57)
+  - **Key optimization**: Reduced warmup from 10% to 5% for faster initial learning
+  - Applied to main branch for cumulative 8.1% total validation loss improvement
+  - ![LR Schedule Results](experiments/lr_schedule_optimization/results/lr_schedule_analysis.png)
+  - Analysis: [LR Schedule Optimization Report](experiments/lr_schedule_optimization/results/lr_schedule_analysis_report.md)
+
 - **🔬 Ablation Study Optimization**: Comprehensive hyperparameter optimization through systematic experiments
   - **6.5% validation loss improvement** (7.2785 → 6.8076)
   - **23.1% accuracy improvement** (11.58% → 14.25%)
