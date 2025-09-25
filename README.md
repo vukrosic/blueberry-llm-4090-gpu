@@ -27,6 +27,21 @@ Any company or person (even with no technical experience) should be able to down
   - ![Learning Rate Comparison](experiments/learning_rate_optimization/learning_rate_comparison_extended.png)
   - Full analysis: [Learning Rate Optimization Results](experiments/learning_rate_optimization/LEARNING_RATE_OPTIMIZATION_RESULTS.md)
 
+- **📈 Cosine Annealing Schedule Optimization**: Fine-tuned learning rate schedule for additional performance gains
+  - **Conservative Warmup** (10% warmup, 5% min LR) achieved **best accuracy: 9.4%**
+  - **2.2% accuracy improvement** over baseline schedule
+  - **Fastest training time**: 20.5s
+  - Tested 5 different cosine annealing configurations
+  - ![Cosine Annealing Results](experiments/cosine_annealing/cosine_annealing_results_comparison.png)
+  - Analysis: [Cosine Annealing Results](experiments/cosine_annealing/RESULTS_ANALYSIS.md)
+
+- **🏆 Final Main Branch Optimization**: Applied optimal configuration to production main branch
+  - **26.5% additional accuracy improvement** (9.0% → 11.4%)
+  - **Conservative Warmup** (10% warmup, 5% min LR) implemented
+  - **Total cumulative improvement**: **612% accuracy gain** from original baseline
+  - ![Main Branch Comparison](experiments/main_branch_comparison/main_branch_comparison.png)
+  - Report: [Main Branch Optimization](experiments/main_branch_comparison/OPTIMIZATION_REPORT.md)
+
 ### Sep 22 2025
 - **Repository Launch**: Initial T4-optimized MoE implementation
 - *Your experiment results will appear here when you submit them*

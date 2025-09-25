@@ -64,13 +64,13 @@ def train_moe_model(config: MoEModelConfig, train_loader: DataLoader, val_loader
     # Learning rate schedule
     schedulers = []
     for optimizer in optimizers:
-        warmup_steps = config.max_steps // 20
+        warmup_steps = config.max_steps // 10  # 10% warmup (was // 20)
         def lr_lambda(step):
             if step < warmup_steps:
                 return step / warmup_steps
             else:
                 progress = (step - warmup_steps) / (config.max_steps - warmup_steps)
-                return 0.1 + 0.9 * 0.5 * (1 + math.cos(math.pi * progress))
+                return 0.05 + 0.95 * 0.5 * (1 + math.cos(math.pi * progress))  # 5% min LR (was 0.1 + 0.9)
 
         scheduler = torch.optim.lr_scheduler.LambdaLR(optimizer, lr_lambda)
         schedulers.append(scheduler)
