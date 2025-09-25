@@ -1,0 +1,104 @@
+[
+  {
+    "experiment_name": "baseline",
+    "description": "Current optimized baseline",
+    "val_loss": 7.278503222465515,
+    "val_accuracy": 0.11584798177083333,
+    "val_perplexity": 1448.8178433804544,
+    "training_time_minutes": 0.22637627522150675,
+    "config": {
+      "gradient_accumulation_steps": 4,
+      "muon_lr": 0.065,
+      "dropout": 0.1,
+      "weight_decay": 0.1,
+      "num_experts": 8,
+      "expert_top_k": 2
+    },
+    "success": true
+  },
+  {
+    "experiment_name": "grad_accum_2",
+    "description": "Lower gradient accumulation for faster updates",
+    "val_loss": 7.000299625396728,
+    "val_accuracy": 0.13182454427083334,
+    "val_perplexity": 1096.961786803863,
+    "training_time_minutes": 0.2020859996477763,
+    "config": {
+      "gradient_accumulation_steps": 2,
+      "muon_lr": 0.065,
+      "dropout": 0.1,
+      "weight_decay": 0.1,
+      "num_experts": 8,
+      "expert_top_k": 2
+    },
+    "success": true
+  },
+  {
+    "experiment_name": "combo_grad_dropout",
+    "description": "Combine best grad_accum with lower dropout",
+    "val_loss": 6.80764105796814,
+    "val_accuracy": 0.14251708984375,
+    "val_perplexity": 904.7340724907978,
+    "training_time_minutes": 0.20344643195470175,
+    "config": {
+      "gradient_accumulation_steps": 2,
+      "muon_lr": 0.065,
+      "dropout": 0.05,
+      "weight_decay": 0.1,
+      "num_experts": 8,
+      "expert_top_k": 2
+    },
+    "success": true
+  },
+  {
+    "experiment_name": "combo_grad_lr",
+    "description": "Combine best grad_accum with higher learning rate",
+    "val_loss": 6.898666262626648,
+    "val_accuracy": 0.13742024739583333,
+    "val_perplexity": 990.9521638965645,
+    "training_time_minutes": 0.2043158213297526,
+    "config": {
+      "gradient_accumulation_steps": 2,
+      "muon_lr": 0.08,
+      "dropout": 0.1,
+      "weight_decay": 0.1,
+      "num_experts": 8,
+      "expert_top_k": 2
+    },
+    "success": true
+  },
+  {
+    "experiment_name": "combo_grad_experts",
+    "description": "Combine best grad_accum with more experts",
+    "val_loss": 6.944647607803344,
+    "val_accuracy": 0.1404052734375,
+    "val_perplexity": 1037.5812972221931,
+    "training_time_minutes": 0.24614070653915404,
+    "config": {
+      "gradient_accumulation_steps": 2,
+      "muon_lr": 0.065,
+      "dropout": 0.1,
+      "weight_decay": 0.1,
+      "num_experts": 12,
+      "expert_top_k": 2
+    },
+    "success": true
+  },
+  {
+    "experiment_name": "ultimate_combo",
+    "description": "Ultimate combination of all best parameters",
+    "val_loss": 7.169182896614075,
+    "val_accuracy": 0.14300862630208333,
+    "val_perplexity": 1298.7829291855228,
+    "training_time_minutes": 0.2496721307436625,
+    "config": {
+      "gradient_accumulation_steps": 2,
+      "muon_lr": 0.08,
+      "dropout": 0.05,
+      "weight_decay": 0.1,
+      "num_experts": 12,
+      "expert_top_k": 2
+    },
+    "success": true
+  }
+]
