@@ -1,0 +1,262 @@
+[
+  {
+    "experiment_name": "baseline_optimized",
+    "description": "Current optimized configuration (8 experts, top-2, 0.01 load balance)",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.741710748672485,
+      "val_accuracy": 0.15076334635416666,
+      "val_perplexity": 847.0085157981139
+    },
+    "training_time_minutes": 0.2314365824063619,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 36592512,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.46284576341161326,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.25
+    },
+    "timestamp": "2025-09-25T09:19:14.804378",
+    "success": true
+  },
+  {
+    "experiment_name": "top1_routing",
+    "description": "Top-1 expert routing for maximum specialization",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 1,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.84905143737793,
+      "val_accuracy": 0.13232584635416667,
+      "val_perplexity": 942.9860010279467
+    },
+    "training_time_minutes": 0.19391947189966838,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 29514624,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.37332005731354884,
+      "experts_per_token": 1,
+      "expert_utilization_ratio": 0.125
+    },
+    "timestamp": "2025-09-25T09:19:28.442379",
+    "success": true
+  },
+  {
+    "experiment_name": "top3_routing",
+    "description": "Top-3 expert routing for better coverage",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 3,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.762765645980835,
+      "val_accuracy": 0.14557535807291666,
+      "val_perplexity": 865.0312608422117
+    },
+    "training_time_minutes": 0.20680224895477295,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 43670400,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.5523714695096777,
+      "experts_per_token": 3,
+      "expert_utilization_ratio": 0.375
+    },
+    "timestamp": "2025-09-25T09:19:42.853881",
+    "success": true
+  },
+  {
+    "experiment_name": "top4_routing",
+    "description": "Top-4 expert routing for maximum coverage",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 4,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.707903442382812,
+      "val_accuracy": 0.1484130859375,
+      "val_perplexity": 818.8520679975887
+    },
+    "training_time_minutes": 0.22037099599838256,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 50748288,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.6418971756077422,
+      "experts_per_token": 4,
+      "expert_utilization_ratio": 0.5
+    },
+    "timestamp": "2025-09-25T09:19:58.079794",
+    "success": true
+  },
+  {
+    "experiment_name": "4_experts_top2",
+    "description": "Fewer experts (4) with top-2 routing",
+    "moe_config": {
+      "num_experts": 4,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.795192456245422,
+      "val_accuracy": 0.14298828125,
+      "val_perplexity": 893.5412106409907
+    },
+    "training_time_minutes": 0.15587139129638672,
+    "model_stats": {
+      "total_parameters": 50739072,
+      "active_parameters": 36583296,
+      "expert_parameters": 28311552,
+      "parameter_efficiency": 0.721008377922245,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.5
+    },
+    "timestamp": "2025-09-25T09:20:09.435440",
+    "success": true
+  },
+  {
+    "experiment_name": "12_experts_top2",
+    "description": "More experts (12) with top-2 routing",
+    "moe_config": {
+      "num_experts": 12,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.766364693641663,
+      "val_accuracy": 0.15113850911458335,
+      "val_perplexity": 868.1501587425579
+    },
+    "training_time_minutes": 0.2450381875038147,
+    "model_stats": {
+      "total_parameters": 107380608,
+      "active_parameters": 36601728,
+      "expert_parameters": 84934656,
+      "parameter_efficiency": 0.34085975747129316,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.16666666666666666
+    },
+    "timestamp": "2025-09-25T09:20:26.141170",
+    "success": true
+  },
+  {
+    "experiment_name": "16_experts_top2",
+    "description": "Many experts (16) with top-2 routing",
+    "moe_config": {
+      "num_experts": 16,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.01,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.618548212051391,
+      "val_accuracy": 0.14942626953125,
+      "val_perplexity": 748.8571258006882
+    },
+    "training_time_minutes": 0.28900829950968426,
+    "model_stats": {
+      "total_parameters": 135701376,
+      "active_parameters": 36610944,
+      "expert_parameters": 113246208,
+      "parameter_efficiency": 0.2697905141359805,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.125
+    },
+    "timestamp": "2025-09-25T09:20:45.486763",
+    "success": true
+  },
+  {
+    "experiment_name": "low_load_balance",
+    "description": "Lower load balancing weight (0.005) for less constraint",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.005,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.746626400947571,
+      "val_accuracy": 0.14995035807291668,
+      "val_perplexity": 851.1823653276698
+    },
+    "training_time_minutes": 0.1996801495552063,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 36592512,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.46284576341161326,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.25
+    },
+    "timestamp": "2025-09-25T09:20:59.472131",
+    "success": true
+  },
+  {
+    "experiment_name": "high_load_balance",
+    "description": "Higher load balancing weight (0.02) for better utilization",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.02,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.781763896942139,
+      "val_accuracy": 0.14789388020833333,
+      "val_perplexity": 881.6224445376413
+    },
+    "training_time_minutes": 0.201917032400767,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 36592512,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.46284576341161326,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.25
+    },
+    "timestamp": "2025-09-25T09:21:13.591088",
+    "success": true
+  },
+  {
+    "experiment_name": "very_high_load_balance",
+    "description": "Very high load balancing weight (0.05) for forced utilization",
+    "moe_config": {
+      "num_experts": 8,
+      "expert_top_k": 2,
+      "load_balancing_weight": 0.05,
+      "routing_noise_std": 0.1
+    },
+    "results": {
+      "val_loss": 6.737594146728515,
+      "val_accuracy": 0.14911539713541666,
+      "val_perplexity": 843.528885934885
+    },
+    "training_time_minutes": 0.20393226544062296,
+    "model_stats": {
+      "total_parameters": 79059840,
+      "active_parameters": 36592512,
+      "expert_parameters": 56623104,
+      "parameter_efficiency": 0.46284576341161326,
+      "experts_per_token": 2,
+      "expert_utilization_ratio": 0.25
+    },
+    "timestamp": "2025-09-25T09:21:27.831117",
+    "success": true
+  }
+]

@@ -19,6 +19,14 @@ Any company or person (even with no technical experience) should be able to down
 *Community experiments and findings will be documented here*
 
 ### Sep 25 2025
+- **🧠 MoE Routing Optimization**: Expert routing strategy optimization for enhanced model capacity
+  - **1.8% additional validation loss improvement** (6.7417 → 6.6185)
+  - **11.7% perplexity reduction** (847.01 → 748.86)
+  - **Key optimization**: Increased experts from 8 to 16 for better specialization
+  - Applied to main branch for cumulative 9.3% total validation loss improvement
+  - ![MoE Routing Results](experiments/moe_routing_optimization/results/moe_routing_analysis.png)
+  - Analysis: [MoE Routing Optimization Report](experiments/moe_routing_optimization/results/moe_routing_analysis_report.md)
+
 - **📈 Learning Rate Schedule Optimization**: Fine-tuned warmup strategy for additional performance gains
   - **1.6% additional validation loss improvement** (6.8625 → 6.7518)
   - **16.4% accuracy improvement** (12.99% → 15.12%)
