@@ -1,0 +1,52 @@
+[
+  {
+    "experiment_name": "Baseline_Current",
+    "final_results": {
+      "val_loss": 7.3995,
+      "val_accuracy": 0.0925,
+      "val_perplexity": 1635.17
+    },
+    "training_time": 20.661943435668945,
+    "status": "completed"
+  },
+  {
+    "experiment_name": "Conservative_Warmup",
+    "final_results": {
+      "val_loss": 7.41,
+      "val_accuracy": 0.094,
+      "val_perplexity": 1652.45
+    },
+    "training_time": 20.528093338012695,
+    "status": "completed"
+  },
+  {
+    "experiment_name": "Aggressive_Warmup",
+    "final_results": {
+      "val_loss": 7.4207,
+      "val_accuracy": 0.0899,
+      "val_perplexity": 1670.17
+    },
+    "training_time": 20.80850863456726,
+    "status": "completed"
+  },
+  {
+    "experiment_name": "Long_Warmup",
+    "final_results": {
+      "val_loss": 7.451,
+      "val_accuracy": 0.0889,
+      "val_perplexity": 1721.66
+    },
+    "training_time": 20.576337575912476,
+    "status": "completed"
+  },
+  {
+    "experiment_name": "No_Warmup",
+    "final_results": {
+      "val_loss": 7.4225,
+      "val_accuracy": 0.0904,
+      "val_perplexity": 1673.24
+    },
+    "training_time": 20.58672285079956,
+    "status": "completed"
+  }
+]
