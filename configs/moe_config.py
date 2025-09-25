@@ -14,7 +14,7 @@ class MoEModelConfig:
 
     # Training parameters
     gradient_accumulation_steps: int = 4
-    muon_lr: float = 0.01
+    muon_lr: float = 0.065
 
     # Data parameters
     max_seq_len: int = 512

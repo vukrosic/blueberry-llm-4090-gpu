@@ -1,0 +1,44 @@
+🔍 Device: CUDA
+GPU: NVIDIA GeForce RTX 4090
+Memory: 25.3 GB
+🌱 Set all seeds to 42
+📦 Loading cached data from data_cache/tokenized_data_2000_500000.pkl
+✅ Loaded 2000 documents, 500,000 tokens from cache
+📊 Dataset: 449540 train, 49948 val samples
+
+============================================================
+🧪 TRAINING: Mixture of Experts Model
+============================================================
+
+📋 MoE Model Configuration:
+   Architecture: 384d, 6L, 8H, 1536ff
+   MoE: 8 experts, top-2 routing
+   Training: 20 steps, batch size 24
+   Data: 500,000 tokens, seq_len 512
+
+🚀 Training MoE model with 8 experts (top-2)
+🌱 Set all seeds to 42
+  📊 Total parameters: 79,059,840
+  📊 Active parameters: 22,436,736
+  📊 Expert parameters: 56,623,104
+  📊 Parameter efficiency: 28.4% active per forward pass
+  Muon parameters: 60,180,480
+  AdamW parameters: 18,879,360
+Training MoE:   0%|          | 0/20 [00:00<?, ?it/s]Training MoE:   0%|          | 0/20 [00:00<?, ?it/s, loss=10.7965, aux=0.0602, acc=0.017, ppl=48850.9]
+Step 10: Val Loss: 9.3933, Val Acc: 0.0188, Val PPL: 12007.42
+Training MoE: 100%|██████████| 20/20 [00:07<00:00,  2.52it/s, loss=10.7965, aux=0.0602, acc=0.017, ppl=48850.9]Training MoE: 100%|██████████| 20/20 [00:07<00:00,  2.51it/s, loss=10.7965, aux=0.0602, acc=0.017, ppl=48850.9]
+
+📊 Final Results:
+   Val Loss: 7.4142
+   Val Accuracy: 0.0935
+   Val Perplexity: 1659.34
+
+📈 Evaluation loss plot saved as 'eval_loss_vs_time.png'
+
+🎯 MoE Model Results:
+⏱️ Training time: 0.2 minutes
+🏆 Final Results:
+   Validation Loss: 7.4142
+   Validation Accuracy: 0.0935
+   Validation Perplexity: 1659.34
+============================================================

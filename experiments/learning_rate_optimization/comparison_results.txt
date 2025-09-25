@@ -1,0 +1,11 @@
+BASELINE RESULTS (LR=0.01):
+Val Loss: 9.5662
+Val Accuracy: 0.0157
+Val Perplexity: 14274.03
+Training Time: 0.2 minutes
+
+OPTIMIZED RESULTS (LR=0.065):
+Val Loss: 7.3791
+Val Accuracy: 0.0930
+Val Perplexity: 1602.09
+Training Time: 0.2 minutes
