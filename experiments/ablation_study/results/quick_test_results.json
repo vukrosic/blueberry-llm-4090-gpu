@@ -1,0 +1,34 @@
+[
+  {
+    "experiment_name": "baseline",
+    "val_loss": 7.282990779876709,
+    "val_accuracy": 0.11354410807291666,
+    "val_perplexity": 1455.334106748506,
+    "training_time_minutes": 0.22624742984771729,
+    "success": true
+  },
+  {
+    "experiment_name": "grad_accum_2",
+    "val_loss": 6.980751247406006,
+    "val_accuracy": 0.13746256510416666,
+    "val_perplexity": 1075.7262000338892,
+    "training_time_minutes": 0.199696147441864,
+    "success": true
+  },
+  {
+    "experiment_name": "moe_top1",
+    "val_loss": 7.365013589859009,
+    "val_accuracy": 0.10074788411458334,
+    "val_perplexity": 1579.7368947729099,
+    "training_time_minutes": 0.188546621799469,
+    "success": true
+  },
+  {
+    "experiment_name": "dropout_005",
+    "val_loss": 7.3334272718429565,
+    "val_accuracy": 0.110048828125,
+    "val_perplexity": 1530.6186389446855,
+    "training_time_minutes": 0.1975289265314738,
+    "success": true
+  }
+]
