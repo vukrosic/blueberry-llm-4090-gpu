@@ -1,0 +1,134 @@
+{
+  "summary": {
+    "total_experiments": 11,
+    "successful_experiments": 7,
+    "best_lr": 0.05,
+    "best_momentum": 0.95,
+    "best_adamw_ratio": 0.1,
+    "best_weight_decay": 0.1,
+    "best_accuracy": 0.19027099609375,
+    "best_loss": 5.700131378173828
+  },
+  "all_results": [
+    {
+      "experiment_name": "optimal_low",
+      "muon_lr": 0.05,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "training_time": 31.11004114151001,
+      "final_loss": 5.700131378173828,
+      "final_accuracy": 0.19027099609375,
+      "final_perplexity": 298.9066681997882,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_med_low",
+      "muon_lr": 0.07,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "training_time": 29.155186414718628,
+      "final_loss": 5.713380069732666,
+      "final_accuracy": 0.18726318359375,
+      "final_perplexity": 302.89313990745575,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_med",
+      "muon_lr": 0.08,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "training_time": 29.154529094696045,
+      "final_loss": 5.694433817863464,
+      "final_accuracy": 0.187333984375,
+      "final_perplexity": 297.20847181264645,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_high",
+      "muon_lr": 0.12,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "training_time": 28.63175058364868,
+      "final_loss": 5.8423736906051635,
+      "final_accuracy": 0.17599365234375,
+      "final_perplexity": 344.5963357192879,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_very_high",
+      "muon_lr": 0.15,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "training_time": 28.75620436668396,
+      "final_loss": 6.192113242149353,
+      "final_accuracy": 0.169547119140625,
+      "final_perplexity": 488.8781332459334,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_lr_mom_09",
+      "muon_lr": 0.1,
+      "momentum": 0.9,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "error": "MoEModelConfig.__init__() got an unexpected keyword argument 'momentum'",
+      "status": "failed"
+    },
+    {
+      "experiment_name": "optimal_lr_mom_99",
+      "muon_lr": 0.1,
+      "momentum": 0.99,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.1,
+      "error": "MoEModelConfig.__init__() got an unexpected keyword argument 'momentum'",
+      "status": "failed"
+    },
+    {
+      "experiment_name": "optimal_lr_adamw_005",
+      "muon_lr": 0.1,
+      "momentum": 0.95,
+      "adamw_ratio": 0.05,
+      "weight_decay": 0.1,
+      "error": "MoEModelConfig.__init__() got an unexpected keyword argument 'adamw_ratio'",
+      "status": "failed"
+    },
+    {
+      "experiment_name": "optimal_lr_adamw_02",
+      "muon_lr": 0.1,
+      "momentum": 0.95,
+      "adamw_ratio": 0.2,
+      "weight_decay": 0.1,
+      "error": "MoEModelConfig.__init__() got an unexpected keyword argument 'adamw_ratio'",
+      "status": "failed"
+    },
+    {
+      "experiment_name": "optimal_lr_wd_005",
+      "muon_lr": 0.1,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.05,
+      "training_time": 28.87308096885681,
+      "final_loss": 5.733882484436035,
+      "final_accuracy": 0.184029541015625,
+      "final_perplexity": 309.1672783914115,
+      "status": "completed"
+    },
+    {
+      "experiment_name": "optimal_lr_wd_02",
+      "muon_lr": 0.1,
+      "momentum": 0.95,
+      "adamw_ratio": 0.1,
+      "weight_decay": 0.2,
+      "training_time": 29.400623083114624,
+      "final_loss": 5.6871016359329225,
+      "final_accuracy": 0.184989013671875,
+      "final_perplexity": 295.0372548321783,
+      "status": "completed"
+    }
+  ]
+}

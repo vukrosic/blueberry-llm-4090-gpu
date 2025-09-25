@@ -228,4 +228,18 @@ def train_moe_model(config: MoEModelConfig, train_loader: DataLoader, val_loader
     with open(eval_file, 'wb') as f:
         pickle.dump(eval_data, f)
     
+    # Save evaluation data for plotting
+    eval_data = {
+        'eval_steps': eval_steps,
+        'eval_losses': eval_losses,
+        'eval_times': eval_times,
+        'config_lr': config.muon_lr
+    }
+    
+    # Save to file for later plotting
+    import pickle
+    eval_file = f"temp_eval_data_lr_{config.muon_lr:.4f}.pkl"
+    with open(eval_file, 'wb') as f:
+        pickle.dump(eval_data, f)
+    
     return model, final_eval

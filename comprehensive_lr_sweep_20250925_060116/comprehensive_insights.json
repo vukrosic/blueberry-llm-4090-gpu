@@ -1,0 +1,16 @@
+{
+  "best_lr": 0.065,
+  "best_accuracy": 0.180108642578125,
+  "best_loss": 5.895280718803406,
+  "best_loss_lr": 0.065,
+  "top_20_percent_lr_range": [
+    0.035,
+    0.085
+  ],
+  "total_experiments": 26,
+  "successful_experiments": 26,
+  "lr_range_tested": [
+    0.001,
+    1.0
+  ]
+}

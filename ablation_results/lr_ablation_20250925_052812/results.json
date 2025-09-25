@@ -1,0 +1,32 @@
+[
+  {
+    "experiment_name": "very_low",
+    "muon_lr": 0.001,
+    "error": "'tuple' object has no attribute 'get'",
+    "status": "failed"
+  },
+  {
+    "experiment_name": "low",
+    "muon_lr": 0.01,
+    "error": "'tuple' object has no attribute 'get'",
+    "status": "failed"
+  },
+  {
+    "experiment_name": "medium",
+    "muon_lr": 0.03,
+    "error": "'tuple' object has no attribute 'get'",
+    "status": "failed"
+  },
+  {
+    "experiment_name": "high",
+    "muon_lr": 0.1,
+    "error": "'tuple' object has no attribute 'get'",
+    "status": "failed"
+  },
+  {
+    "experiment_name": "very_high",
+    "muon_lr": 0.3,
+    "error": "'tuple' object has no attribute 'get'",
+    "status": "failed"
+  }
+]

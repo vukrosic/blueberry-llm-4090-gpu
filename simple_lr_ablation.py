@@ -82,7 +82,7 @@ def run_learning_rate_ablation():
             
             # Train model
             start_time = time.time()
-            training_results = train_moe_model(config, train_loader, val_loader)
+            model, training_results = train_moe_model(config, train_loader, val_loader)
             training_time = time.time() - start_time
             
             # Store results (extract only serializable metrics)
@@ -90,9 +90,9 @@ def run_learning_rate_ablation():
                 'experiment_name': lr_config['name'],
                 'muon_lr': lr_config['muon_lr'],
                 'training_time': training_time,
-                'final_loss': training_results.get('final_loss', 0),
-                'final_accuracy': training_results.get('final_accuracy', 0),
-                'final_perplexity': training_results.get('final_perplexity', 0),
+                'final_loss': training_results.get('val_loss', 0),
+                'final_accuracy': training_results.get('val_accuracy', 0),
+                'final_perplexity': training_results.get('val_perplexity', 0),
                 'status': 'completed'
             }
             results.append(result)

@@ -1,0 +1,6 @@
+Learning Rate,Experiment,Final Loss,Final Accuracy,Final Perplexity,Training Time (s),Efficiency
+0.001,very_low,10.517,0.0155,36939.99,24.87,0.000624
+0.01,low,7.7403,0.1007,2299.23,23.58,0.004269
+0.03,medium,6.8478,0.1429,941.81,24.07,0.005936
+0.1,high,6.6064,0.1494,739.79,24.18,0.006177
+0.3,very_high,11.9766,0.0379,158989.77,22.99,0.001647
