@@ -1,0 +1,554 @@
+[
+  {
+    "experiment_name": "baseline_optimized",
+    "description": "Current optimized schedule (10% warmup, 5% min LR, cosine)",
+    "schedule_config": {
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.05,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 6.862452788352966,
+      "val_accuracy": 0.12988362630208333,
+      "val_perplexity": 955.7083452860871
+    },
+    "training_time_minutes": 0.2262112299601237,
+    "lr_history": [
+      [
+        1,
+        0.0325
+      ],
+      [
+        3,
+        0.065
+      ],
+      [
+        5,
+        0.06453093937425193
+      ],
+      [
+        7,
+        0.06313800966676493
+      ],
+      [
+        9,
+        0.06086353434184455
+      ],
+      [
+        11,
+        0.05777662218129844
+      ],
+      [
+        13,
+        0.0539710674490719
+      ],
+      [
+        15,
+        0.049562499999999995
+      ],
+      [
+        17,
+        0.04468487192518003
+      ],
+      [
+        19,
+        0.03948638748546648
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.502100329399109,
+          "val_accuracy": 0.09718912760416666,
+          "val_perplexity": 1811.8438898717893
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:41:05.887380",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_warmup_05",
+    "description": "Shorter warmup (5%) with cosine annealing",
+    "schedule_config": {
+      "warmup_ratio": 0.05,
+      "min_lr_ratio": 0.05,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 6.7517709016799925,
+      "val_accuracy": 0.151181640625,
+      "val_perplexity": 855.5725566181552
+    },
+    "training_time_minutes": 0.1942108710606893,
+    "lr_history": [
+      [
+        1,
+        0.065
+      ],
+      [
+        3,
+        0.06457890524255905
+      ],
+      [
+        5,
+        0.06332710733750709
+      ],
+      [
+        7,
+        0.06127875206850035
+      ],
+      [
+        9,
+        0.058489713227613656
+      ],
+      [
+        11,
+        0.05503606852394476
+      ],
+      [
+        13,
+        0.05101202438202994
+      ],
+      [
+        15,
+        0.04652734623616044
+      ],
+      [
+        17,
+        0.04170436441547218
+      ],
+      [
+        19,
+        0.03667463729145826
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.493466682434082,
+          "val_accuracy": 0.10553873697916667,
+          "val_perplexity": 1796.2684027488908
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:41:19.542216",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_warmup_15",
+    "description": "Longer warmup (15%) with cosine annealing",
+    "schedule_config": {
+      "warmup_ratio": 0.15,
+      "min_lr_ratio": 0.05,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 7.155614466667175,
+      "val_accuracy": 0.12118326822916667,
+      "val_perplexity": 1281.2794995583047
+    },
+    "training_time_minutes": 0.19488535324732462,
+    "lr_history": [
+      [
+        1,
+        0.021666666666666667
+      ],
+      [
+        3,
+        0.043333333333333335
+      ],
+      [
+        5,
+        0.065
+      ],
+      [
+        7,
+        0.06447429445274047
+      ],
+      [
+        9,
+        0.06291508008285948
+      ],
+      [
+        11,
+        0.06037545406565184
+      ],
+      [
+        13,
+        0.05694190031918785
+      ],
+      [
+        15,
+        0.05273134439820955
+      ],
+      [
+        17,
+        0.04788717173460062
+      ],
+      [
+        19,
+        0.042574344818475565
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.475823426246643,
+          "val_accuracy": 0.10141357421875,
+          "val_perplexity": 1764.8543174045005
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:41:33.238365",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_warmup_20",
+    "description": "Extended warmup (20%) with cosine annealing",
+    "schedule_config": {
+      "warmup_ratio": 0.2,
+      "min_lr_ratio": 0.05,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 7.122229390144348,
+      "val_accuracy": 0.1284033203125,
+      "val_perplexity": 1239.2100388515234
+    },
+    "training_time_minutes": 0.1936173399289449,
+    "lr_history": [
+      [
+        1,
+        0.01625
+      ],
+      [
+        3,
+        0.0325
+      ],
+      [
+        5,
+        0.04875
+      ],
+      [
+        7,
+        0.065
+      ],
+      [
+        9,
+        0.06440674553244974
+      ],
+      [
+        11,
+        0.06264978056628598
+      ],
+      [
+        13,
+        0.05979662427984109
+      ],
+      [
+        15,
+        0.05595692186913466
+      ],
+      [
+        17,
+        0.05127823094448022
+      ],
+      [
+        19,
+        0.045940350974272154
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.541686520576477,
+          "val_accuracy": 0.09652180989583334,
+          "val_perplexity": 1885.0064480199087
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:41:46.858488",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_minlr_01",
+    "description": "Very low minimum LR (1%) with cosine",
+    "schedule_config": {
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.01,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 6.831031951904297,
+      "val_accuracy": 0.14258626302083333,
+      "val_perplexity": 926.1460576986241
+    },
+    "training_time_minutes": 0.19456785917282104,
+    "lr_history": [
+      [
+        1,
+        0.0325
+      ],
+      [
+        3,
+        0.065
+      ],
+      [
+        5,
+        0.06451118945316779
+      ],
+      [
+        7,
+        0.0630596100737866
+      ],
+      [
+        9,
+        0.06068936736676432
+      ],
+      [
+        11,
+        0.05747247995735311
+      ],
+      [
+        13,
+        0.0535066913416644
+      ],
+      [
+        15,
+        0.0489125
+      ],
+      [
+        17,
+        0.0438294981115034
+      ],
+      [
+        19,
+        0.03841213011643349
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.477373332977295,
+          "val_accuracy": 0.09972330729166666,
+          "val_perplexity": 1767.5917978613568
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:42:00.535755",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_minlr_02",
+    "description": "Low minimum LR (2%) with cosine",
+    "schedule_config": {
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.02,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 6.8368356323242185,
+      "val_accuracy": 0.140859375,
+      "val_perplexity": 931.5367412107928
+    },
+    "training_time_minutes": 0.19519660472869874,
+    "lr_history": [
+      [
+        1,
+        0.0325
+      ],
+      [
+        3,
+        0.065
+      ],
+      [
+        5,
+        0.06451612693343883
+      ],
+      [
+        7,
+        0.06307920997203119
+      ],
+      [
+        9,
+        0.060732909110534375
+      ],
+      [
+        11,
+        0.05754851551333945
+      ],
+      [
+        13,
+        0.05362278536851628
+      ],
+      [
+        15,
+        0.049075
+      ],
+      [
+        17,
+        0.04404334156492255
+      ],
+      [
+        19,
+        0.03868069445869174
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.491752262115479,
+          "val_accuracy": 0.09900553385416666,
+          "val_perplexity": 1793.1914820229078
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:42:14.250852",
+    "success": true
+  },
+  {
+    "experiment_name": "cosine_minlr_10",
+    "description": "Higher minimum LR (10%) with cosine",
+    "schedule_config": {
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.1,
+      "schedule_type": "cosine"
+    },
+    "results": {
+      "val_loss": 6.85260130405426,
+      "val_accuracy": 0.13324788411458333,
+      "val_perplexity": 946.3394241902819
+    },
+    "training_time_minutes": 0.19483015537261963,
+    "lr_history": [
+      [
+        1,
+        0.0325
+      ],
+      [
+        3,
+        0.065
+      ],
+      [
+        5,
+        0.06455562677560708
+      ],
+      [
+        7,
+        0.06323600915798783
+      ],
+      [
+        9,
+        0.06108124306069483
+      ],
+      [
+        11,
+        0.058156799961230105
+      ],
+      [
+        13,
+        0.054551537583331276
+      ],
+      [
+        15,
+        0.050375
+      ],
+      [
+        17,
+        0.04575408919227582
+      ],
+      [
+        19,
+        0.04082920919675772
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.4989486503601075,
+          "val_accuracy": 0.0975830078125,
+          "val_perplexity": 1806.1425286118645
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:42:27.943921",
+    "success": true
+  },
+  {
+    "experiment_name": "linear_decay",
+    "description": "Linear decay schedule (10% warmup, 5% min LR)",
+    "schedule_config": {
+      "warmup_ratio": 0.1,
+      "min_lr_ratio": 0.05,
+      "schedule_type": "linear"
+    },
+    "results": {
+      "val_loss": 6.836977686882019,
+      "val_accuracy": 0.14523356119791667,
+      "val_perplexity": 931.669079650057
+    },
+    "training_time_minutes": 0.19766931931177775,
+    "lr_history": [
+      [
+        1,
+        0.0325
+      ],
+      [
+        3,
+        0.065
+      ],
+      [
+        5,
+        0.06156944444444445
+      ],
+      [
+        7,
+        0.05813888888888889
+      ],
+      [
+        9,
+        0.05470833333333334
+      ],
+      [
+        11,
+        0.05127777777777778
+      ],
+      [
+        13,
+        0.04784722222222223
+      ],
+      [
+        15,
+        0.04441666666666667
+      ],
+      [
+        17,
+        0.04098611111111111
+      ],
+      [
+        19,
+        0.03755555555555556
+      ]
+    ],
+    "eval_metrics": [
+      [
+        10,
+        {
+          "val_loss": 7.457773694992065,
+          "val_accuracy": 0.10173909505208334,
+          "val_perplexity": 1733.284937766098
+        }
+      ]
+    ],
+    "timestamp": "2025-09-25T08:42:41.807535",
+    "success": true
+  }
+]
